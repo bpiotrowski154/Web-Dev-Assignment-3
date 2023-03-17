@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Assignment3</title>
+</head>
+<body>
+    <form name="theForm" id="theForm" action="" method="get" onsubmit="validate()">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <span id="username_error"></span>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="position">Position: </label>
+            <select name="position" id="position">
+                <option disabled selected value>Not Selected</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Mechanic">Mechanic</option>
+            </select>
+        </div>
+        <div>
+            <p>Type: </p>
+            <div>
+                <input type="radio" name="type" id="fulltime" value="fulltime">
+                <label for="fulltime">Full-Time</label>                    
+            </div>
+            <div>
+                <input type="radio" name="type" id="parttime" value="parttime">
+                <label for="parttime">Part-Time</label>                    
+            </div>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
