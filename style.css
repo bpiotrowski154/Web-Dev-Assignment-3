@@ -4,21 +4,24 @@ form{
     padding: 5px;
     width: 300px;
 }
-div{
+.display-table {
     display: table-row;
 }
-label{
+.table-label {
     display: table-cell;
     text-align: right;
     padding-right: 5px;
     font-weight: bold;
 }
-input{
+.table-input {
     display: table-cell;
 }
-p{
+.table-p {
     display: table-cell;
     text-align: right;
     padding-right: 5px;
     font-weight: bold;
+}
+.error {
+    border: 1px solid red;
 }

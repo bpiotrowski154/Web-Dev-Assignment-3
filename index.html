@@ -5,42 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="scripts.js"></script>
-    <title>Assignment3</title>
+    <title>Assignment 3</title>
 </head>
 <body>
-    <form name="theForm" id="theForm" action="" method="get" onsubmit="validate()">
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-            <span id="username_error"></span>
+    <form name="theForm" id="theForm" action="" method="post" onsubmit="validate()">
+        <div class="display-table">
+            <label class="table-label" for="username">Username:</label>
+            <input class="table-input" type="text" name="username" id="username" required>
+            <div style="color:red" class="req" id="userfail">Please enter a valid username.</div><br>
+            <div style="color:green" class="pass" id="userpass">&#10004;</div>
         </div>
-        <div>
-            <label for="email">Email: </label>
-            <input type="email" name="email">
+        <div class="display-table">
+            <label class="table-label" for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
         </div>
-        <div>
-            <label for="position">Position: </label>
-            <select name="position" id="position">
+        <div class="display-table">
+            <label class="table-label" for="position">Position:</label>
+            <select name="position" id="position" required>
                 <option disabled selected value>Not Selected</option>
                 <option value="Engineer">Engineer</option>
                 <option value="Doctor">Doctor</option>
                 <option value="Mechanic">Mechanic</option>
             </select>
+            <div style="color:red" class="req" id="positionfail">Please select a valid position.</div><br>
+            <div style="color:green" class="pass" id="positionpass">&#10004;</div>
         </div>
-        <div>
-            <p>Type: </p>
-            <div>
-                <input type="radio" name="type" id="fulltime" value="fulltime">
-                <label for="fulltime">Full-Time</label>                    
+        <div class="display-table">
+            <p class="table-p">Type: </p>
+            <div class="display-table">
+                <input class="table-input" type="radio" name="type" id="fulltime" value="fulltime">
+                <label class="table-label" for="fulltime">Full-Time</label>                    
             </div>
-            <div>
-                <input type="radio" name="type" id="parttime" value="parttime">
-                <label for="parttime">Part-Time</label>                    
+            <div class="display-table">
+                <input class="table-input" type="radio" name="type" id="parttime" value="parttime">
+                <label class="table-label" for="parttime">Part-Time</label>                    
             </div>
+            <div style="color:red" class="req" id="positionfail">Please select a valid position.</div><br>
+            <div style="color:green" class="pass" id="positionpass">&#10004;</div>
         </div>
-        <div>
-            <button type="submit">Submit</button>
+        <div class="display-table">
+            <button type="submit" id="submit">Submit</button>
         </div>
     </form>
 </body>
