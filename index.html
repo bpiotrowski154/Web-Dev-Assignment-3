@@ -10,16 +10,18 @@
     <title>Assignment 3</title>
 </head>
 <body>
-    <form name="theForm" id="theForm" action="" method="post" onsubmit="validate()">
+    <form class="the-form" name="theForm" id="theForm" action="" method="post" onsubmit="validate()">
         <div class="display-table">
             <label class="table-label" for="username">Username:</label>
             <input class="table-input" type="text" name="username" id="username" required>
-            <div style="color:red" class="req" id="userfail">Please enter a valid username.</div><br>
-            <div style="color:green" class="pass" id="userpass">&#10004;</div>
+            <div class="req" id="userfail">Please enter a valid username: A-Z, a-z, _ </div><br>
+            <div class="pass" id="userpass">&#10004;</div>
         </div>
         <div class="display-table">
             <label class="table-label" for="email">Email: </label>
             <input type="email" name="email" id="email" required>
+            <div class="req" id="emailfail">Please enter a valid email.</div><br>
+            <div class="pass" id="emailpass">&#10004;</div>
         </div>
         <div class="display-table">
             <label class="table-label" for="position">Position:</label>
@@ -29,8 +31,8 @@
                 <option value="Doctor">Doctor</option>
                 <option value="Mechanic">Mechanic</option>
             </select>
-            <div style="color:red" class="req" id="positionfail">Please select a valid position.</div><br>
-            <div style="color:green" class="pass" id="positionpass">&#10004;</div>
+            <div class="req" id="positionfail">Please select a valid position.</div><br>
+            <div class="pass" id="positionpass">&#10004;</div>
         </div>
         <div class="display-table">
             <p class="table-p">Type: </p>
@@ -42,8 +44,8 @@
                 <input class="table-input" type="radio" name="type" id="parttime" value="parttime">
                 <label class="table-label" for="parttime">Part-Time</label>                    
             </div>
-            <div style="color:red" class="req" id="positionfail">Please select a valid position.</div><br>
-            <div style="color:green" class="pass" id="positionpass">&#10004;</div>
+            <div class="req" id="fulltimefail">Please select fulltime or parttime</div><br>
+            <div class="pass" id="fulltimepass">&#10004;</div>
         </div>
         <div class="display-table">
             <button type="submit" id="submit">Submit</button>

@@ -1,4 +1,4 @@
-form{
+.the-form{
     display: table;
     border: 1px solid grey;
     padding: 5px;
@@ -24,4 +24,16 @@ form{
 }
 .error {
     border: 1px solid red;
+}
+
+.req {
+    display: table-cell;
+    padding-left: 5px;
+    color: red;
+}
+
+.pass {
+    display: table-cell;
+    padding-left: 5px;
+    color: green;
 }
