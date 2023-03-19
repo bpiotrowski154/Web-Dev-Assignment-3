@@ -1,2 +1,2 @@
-# Web-Dev-Assignment-3
+# Web-Dev-Midterm
  Validating Forms w/ JS
